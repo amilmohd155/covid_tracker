@@ -55,12 +55,13 @@ export const fetchDailyConfirmed = async () => {
       data: { data },
     } = await axios.get(`${url}/stats/history`);
 
-    const modifiedData = data.map((dailyData) => ({
-      day: dailyData.day,
-      total: dailyData.summary.total,
-    }));
+    // const modifiedData = data.map((dailyData) => ({
+    //   day: dailyData.day,
+    //   summary: dailyData.summary,
+    //   regional: dailyData.regional
+    // }));
 
-    return modifiedData;
+    return data;
   } catch (error) {}
 };
 
