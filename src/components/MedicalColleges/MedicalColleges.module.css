@@ -1,0 +1,9 @@
+.formControl {
+  margin: spacing(1);
+  min-width: 120;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+}
